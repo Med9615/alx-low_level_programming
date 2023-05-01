@@ -1,56 +1,51 @@
-#include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
 
-int op_add(int a, int b);
-int op_sub(int a, int b);
-int op_mul(int a, int b);
-int op_div(int a, int b);
-int op_mod(int a, int b);
-
 /**
-  * op_add - ...
-  * @a: ...
-  * @b: ...
-  *
-  * Return: ...
-  */
+ * op_add- a function ...
+ * @a: the tab of integer
+ * @b: the number
+ *
+ * Return: 1 or 0
+ */
 int op_add(int a, int b)
 {
 	return (a + b);
 }
 
 /**
-  * op_sub - ...
-  * @a: ...
-  * @b: ...
-  *
-  * Return: ...
-  */
+ * op_sub- a function ...
+ * @a: the tab of integer
+ * @b: the number
+ *
+ * Return: 1 or 0
+ */
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
 
+
 /**
-  * op_mul - ...
-  * @a: ...
-  * @b: ...
-  *
-  * Return: ...
-  */
+ * op_mul- a function ...
+ * @a: the tab of integer
+ * @b: the number
+ *
+ * Return: 1 or 0
+ */
 int op_mul(int a, int b)
 {
 	return (a * b);
 }
 
+
 /**
-  * op_div - ...
-  * @a: ...
-  * @b: ...
-  *
-  * Return: ...
-  */
+ * op_div- a function ...
+ * @a: the tab of integer
+ * @b: the number
+ *
+ * Return: 1 or 0
+ */
 int op_div(int a, int b)
 {
 	if (b == 0)
@@ -58,17 +53,17 @@ int op_div(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
-
 	return (a / b);
 }
 
+
 /**
-  * op_mod - ...
-  * @a: ...
-  * @b: ...
-  *
-  * Return: ...
-  */
+ * op_mod- a function ...
+ * @a: the tab of integer
+ * @b: the number
+ *
+ * Return: 1 or 0
+ */
 int op_mod(int a, int b)
 {
 	if (b == 0)
@@ -76,6 +71,5 @@ int op_mod(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
-
 	return (a % b);
 }
